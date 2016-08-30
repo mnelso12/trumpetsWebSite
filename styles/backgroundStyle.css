@@ -7,13 +7,26 @@ body {
 	background-color: #002649;
 }
 
-notreDameTrumpetsTitle {
-	position: relative;
-	display:table;
-	vertical-align:middle;
-	text-align:center;
-	top:0px;
-	left:0px;
+.fixed-bg {
+	background-position: center;
+	background-attachment: fixed;
+	background-size: cover;
+	position: absolute;
+	background-image: url(../media/trumpetsInDome2.jpg);
 	width:100%;
-	height:200px;
+	height: 400px;
+	min-height: 120px;
+	background-repeat: no-repeat;
+}
+
+.notreDameTrumpetsTitle {
+	color:white;
+	font-size:70px;
+	font-family: 'Arial Black', Gadget, sans-serif;
+	position: absolute;
+	display: table;
+	text-align:center;
+	width: 100%;
+	height: 140px;
+	bottom: 180px;
 } 
