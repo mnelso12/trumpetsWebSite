@@ -1,0 +1,19 @@
+body {
+	margin-top: 0px; 
+	margin-bottom: 0px; 
+	margin-left: 0px; 
+	margin-right: 0px;
+	padding: 0;
+	background-color: #002649;
+}
+
+notreDameTrumpetsTitle {
+	position: relative;
+	display:table;
+	vertical-align:middle;
+	text-align:center;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:200px;
+} 
