@@ -30,3 +30,21 @@ body {
 	height: 140px;
 	bottom: 180px;
 } 
+
+.homeNavBarTableCell {
+	background-color:#193b5b;
+	width:25%; 
+	height:200px;
+	border: 2px solid;
+	border-radius: 10px;
+	border-color: transparent;
+	color: #ccd3da;
+	text-align: center;
+	font-size: 34px;
+}
+
+.homeNavBar td:hover {
+   background-color: #009959;
+   color: #002649;
+}
+
