@@ -149,12 +149,24 @@ body {
 
 .trumpetTreeText {
 	font-size:34px;
-	/*
-	font-family: 'Arial Black', Gadget, sans-serif;
-	*/
-	color: white;
-	width: 50%;
+	width: 67%;
 	margin: 20px 40px 40px 40px;
+	vertical-align: middle;
+	font-family: 'Lato', sans-serif;
+	font-weight: bold;
+	color: white;
+}
+
+.followUsDiv {
+ position: relative; 
+ top: 0px; 
+ height:200px; 
+}
+
+.followUsText {
+	color: #ccd3da;
+	font-size:70px;
+	margin: 40px 40px 40px 40px;
 	vertical-align: middle;
 	font-family: 'Lato', sans-serif;
 	font-weight: bold;
