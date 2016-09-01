@@ -5,6 +5,7 @@ body {
 	margin-right: 0px;
 	padding: 0;
 	background-color: #002649;
+	min-width: 750px;
 }
 
 .fixed-bg {
@@ -47,7 +48,7 @@ body {
 	background-color: transparent;
 	height: 300px; 
 	position: relative; 
-	top: 380px;
+	top: 420px;
 }
 
 .homeNavBarTableCellPlayers {
@@ -146,8 +147,17 @@ body {
 	-webkit-transition: opacity 0.5s linear;
 }
 
+.trumpetTreeDiv {
+	/*
+	background-color: green;
+	opacity: .25;
+	filter: alpha(opacity=30);
+	-webkit-transition: opacity 0.5s linear;
+	*/
+}
 
 .trumpetTreeText {
+	opacity: .99;
 	font-size:34px;
 	width: 67%;
 	margin: 20px 40px 40px 40px;
