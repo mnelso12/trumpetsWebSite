@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
 <link href="styles/backgroundStyle.css" rel="stylesheet"></link>
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lato">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="scripts/home.js"></script>
 
 <body>
 
@@ -10,7 +13,7 @@
 
 <!-- Static info spot, aka ND chunk -->
 <div class="staticInfoTable" style="height: 250px; position: relative; top: 400px; ">
-<table style="font-family: 'Arial', Gadget, sans-serif; color: #faf7eb; font-size: 22px; text-align: center;">
+<table>
 	<tr style="height: 40px;">
 	</tr>
 	<tr>
@@ -34,23 +37,23 @@
 </div>
 
 <!-- Nav Bar Chunk -->
-<div style="font-family: 'Arial', Gadget, sans-serif; background-color: transparent; height: 300px; position: relative; top: 380px; ">
+<div class="homeNavBarDivStyle">
 	<table class="homeNavBar" style="border-spacing: 10px; width:100%;">
 		<tr>
-		<td class="homeNavBarTableCellPlayers">
-			<h3>Players
+		<td onclick="window.location='players.html'" class="homeNavBarTableCellPlayers">
+			<h3 id="homePlayersButton">Players
 			</h3>
 		</td>
-		<td class="homeNavBarTableCellStats">
-			<h3>Stats
+		<td onclick="window.location='stats.html'"class="homeNavBarTableCellStats">
+			<h3 id="homeStatsButton">Stats
 			</h3>
 		</td>
-		<td class="homeNavBarTableCellFun">
-			<h3>Fun
+		<td onclick="window.location='fun.html'" class="homeNavBarTableCellFun">
+			<h3 id="homeFunButton">Fun
 			</h3>
 		</td>
-		<td class="homeNavBarTableCellSeeUs">
-			<h3>See Us
+		<td onclick="window.location='seeus.html'" class="homeNavBarTableCellSeeUs">
+			<h3 id="homeSeeUsButton">See Us
 			</h3>
 		</td>
 		</tr>
