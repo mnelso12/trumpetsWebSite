@@ -34,10 +34,10 @@ body {
 	max-height: 250px;
 }
 
-.homeNavBarTableCell {
+.homeNavBarTableCellPlayers {
 	background-color:#193b5b;
-	width:25%; 
-	height:200px;
+	width: 25%; 
+	height: 200px;
 	border: 2px solid;
 	border-radius: 10px;
 	border-color: transparent;
@@ -46,8 +46,86 @@ body {
 	font-size: 34px;
 }
 
-.homeNavBar td:hover {
-   background-color: #009959;
-   color: #002649;
+.homeNavBarTableCellStats {
+	background-color:#193b5b;
+	width: 25%; 
+	height: 200px;
+	border: 2px solid;
+	border-radius: 10px;
+	border-color: transparent;
+	color: #ccd3da;
+	text-align: center;
+	font-size: 34px;
 }
 
+.homeNavBarTableCellFun {
+	background-color:#193b5b;
+	width: 25%; 
+	height: 200px;
+	border: 2px solid;
+	border-radius: 10px;
+	border-color: transparent;
+	color: #ccd3da;
+	text-align: center;
+	font-size: 34px;
+}
+
+.homeNavBarTableCellSeeUs {
+	background-color:#193b5b;
+	width: 25%; 
+	height: 200px;
+	border: 2px solid;
+	border-radius: 10px;
+	border-color: transparent;
+	color: #ccd3da;
+	text-align: center;
+	font-size: 34px;
+}
+
+.homeNavBarTableCellPlayers:hover {
+	background: url(../media/michellePlaying.jpg) center no-repeat;
+	background-size: cover;
+	color: white;
+	border: 2px solid;
+	border-radius: 10px;
+	border-color: transparent;
+	opacity: .45;
+	filter: alpha(opacity=30);
+	-webkit-transition: opacity 0.5s linear;
+}
+
+.homeNavBarTableCellStats:hover {
+	background: url(../media/bandDanceSilly2016.jpg) center no-repeat;
+	background-size: cover;
+	color: white;
+	border: 2px solid;
+	border-radius: 10px;
+	border-color: transparent;
+	opacity: .45;
+	filter: alpha(opacity=30);
+	-webkit-transition: opacity 0.5s linear;
+}
+
+.homeNavBarTableCellFun:hover {
+	background: url(../media/GraceNicolePhoenix.jpg) center no-repeat;
+	background-size: cover;
+	color: white;
+	border: 2px solid;
+	border-radius: 10px;
+	border-color: transparent;
+	opacity: .45;
+	filter: alpha(opacity=30);
+	-webkit-transition: opacity 0.5s linear;
+}
+
+.homeNavBarTableCellSeeUs:hover {
+	background: url(../media/marchoutSaba.jpg) center no-repeat;
+	background-size: cover;
+	color: white;
+	border: 2px solid;
+	border-radius: 10px;
+	border-color: transparent;
+	opacity: .45;
+	filter: alpha(opacity=30);
+	-webkit-transition: opacity 0.5s linear;
+}
