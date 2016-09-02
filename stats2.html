@@ -25,19 +25,120 @@ border: 1px solid white;
 
 		}
 </style>
+
+
 <body style="background-color: #002649">
 <script src="http://d3js.org/d3.v3.min.js"></script>
 
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript">
+google.charts.load("current", {packages:["corechart"]});
+google.charts.setOnLoadCallback(drawChart);
+function drawChart() {
+	var marchingData = google.visualization.arrayToDataTable([
+			['Task', 'Hours per Day'],
+			['Marched in High School',     64],
+			['Did Not', 20]
+			]);
+
+	var otherClubsData = google.visualization.arrayToDataTable([
+			['Task', 'Hours per Day'],
+			['Involved in Another Club',     83],
+			['Did Not', 1]
+			]);
+
+	var otherClubsOptions = {
+		chartArea: {'width': '100%', 'height': '100%'},
+	               'legend': {'position': 'bottom'},
+		title: 'Marching Experience',
+		is3D: true,
+		backgroundColor: 'transparent',
+		fontSize: '26',
+		fontName: 'Lato',
+		slices: {
+		0: { color: '#ff88ff' },
+		1: { color: 'transparent' }
+		}
+	};
+
+	var otherInstrumentData = google.visualization.arrayToDataTable([
+			['Task', 'Hours per Day'],
+			['Play Another Instrument',     34],
+			['Did Not', 50]
+			]);
+
+	var otherInstrumentOptions = {
+		chartArea: {'width': '100%', 'height': '100%'},
+	               'legend': {'position': 'bottom'},
+		title: 'Marching Experience',
+		is3D: true,
+		backgroundColor: 'transparent',
+		fontSize: '26',
+		fontName: 'Lato',
+		slices: {
+		0: { color: '#fdc116' },
+		1: { color: 'transparent' }
+		}
+	};
+
+	var marchingOptions = {
+		chartArea: {'width': '100%', 'height': '100%'},
+	               'legend': {'position': 'bottom'},
+		title: 'Marching Experience',
+		is3D: true,
+		backgroundColor: 'transparent',
+		fontSize: '26',
+		fontName: 'Lato',
+		slices: {
+		0: { color: '#009959' },
+		1: { color: 'transparent' }
+		}
+	};
+
+	var chart = new google.visualization.PieChart(document.getElementById('piechart_3d'));
+	chart.draw(marchingData, marchingOptions);
+
+	// I have no idea why this works but whatever
+	var chart = new google.visualization.PieChart(document.getElementById('piechart_3d_2'));
+	chart.draw(otherInstrumentData, otherInstrumentOptions);
+	
+	var chart = new google.visualization.PieChart(document.getElementById('piechart_3d_3'));
+	chart.draw(otherClubsData, otherClubsOptions);
+}
+</script>
+
+
+<h3 class="followUsText" align="center" style="text-align:center;">Our Music Background</h3>
+
+<table>
+	<tr>
+		<td width="33%" style="border-spacing: 15px; text-align: center;">
+			<h4 class="followUsTextSmaller">Previous Marching Experience</h4>
+			<div id="piechart_3d" style="width: 450px; height: 250px;"></div>
+		</td>
+		<td width="33%" style="border-spacing: 15px; text-align: center;">
+			<h4 class="followUsTextSmaller">Plays Another Instrument</h4>
+			<div id="piechart_3d_2" style="width: 450px; height: 250px;"></div>
+		</td>
+		<td width="33%" style="border-spacing: 15px; text-align: center;">
+			<h4 class="followUsTextSmaller">Involved in Other Club(s)</h4>
+			<div id="piechart_3d_3" style="width: 450px; height: 250px;"></div>
+		</td>
+	</tr>
+</table>
+
+<!-- Attempt at Globe -->
+<!--
 <div id="map">
 <link href="mapStyle.css" rel="stylesheet">
 <script src="http://d3js.org/topojson.v1.min.js"></script>
 <script src="http://d3js.org/queue.v1.min.js"></script>
 <script src="metaGlobe2Map2.js"></script>
 </div>
-
+-->
 
 <!-- Academics Pie Chart -->
-<h3 class="followUsText">Our Academics</h3>
+<h3 class="followUsText" align="center" style="text-align:center;">Our Academics</h3>
 <script src="scripts/stats.js"></script> 
 
 <!-- USA Map -->
