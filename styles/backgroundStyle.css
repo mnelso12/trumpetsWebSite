@@ -20,6 +20,18 @@ body {
 	background-repeat: no-repeat;
 }
 
+.trumpetsInDomeLink {
+	color: white;
+	font-size: 32px;
+	font-family: 'Lato', sans-serif;
+	font-weight: bold;
+	position: absolute;
+	display: table;
+	text-align: right;
+	width: 100%;
+	bottom: 140px;
+} 
+
 .notreDameTrumpetsTitle {
 	color:white;
 	font-size:70px;
@@ -171,6 +183,15 @@ body {
  position: relative; 
  top: 0px; 
  height:200px; 
+}
+
+.statsSmallHeader {
+	color: #ccd3da;
+	font-size:32px;
+	margin: 10px 10px 10px 10px;
+	vertical-align: middle;
+	font-family: 'Lato', sans-serif;
+	font-weight: bold;
 }
 
 .followUsText {

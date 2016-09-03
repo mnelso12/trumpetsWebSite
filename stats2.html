@@ -94,6 +94,66 @@ function drawChart() {
 		1: { color: 'transparent' }
 		}
 	};
+	
+	var serviceData = google.visualization.arrayToDataTable([
+			['Task', 'Hours per Day'],
+			['Service',     74],
+			['Did Not', 10]
+			]);
+
+	var ensemblesData = google.visualization.arrayToDataTable([
+			['Task', 'Hours per Day'],
+			['In Another Ensemble', 63],
+			['Did Not', 21]
+			]);
+
+	var ensemblesOptions = {
+		chartArea: {'width': '100%', 'height': '100%'},
+	               'legend': {'position': 'bottom'},
+		title: 'Marching Experience',
+		is3D: true,
+		backgroundColor: 'transparent',
+		fontSize: '26',
+		fontName: 'Lato',
+		slices: {
+		0: { color: '#9966ff' },
+		1: { color: 'transparent' }
+		}
+	};
+
+	var leadershipData = google.visualization.arrayToDataTable([
+			['Task', 'Hours per Day'],
+			['Leadership',     34],
+			['Did Not', 50]
+			]);
+
+	var leadershipOptions = {
+		chartArea: {'width': '100%', 'height': '100%'},
+	               'legend': {'position': 'bottom'},
+		title: 'Marching Experience',
+		is3D: true,
+		backgroundColor: 'transparent',
+		fontSize: '26',
+		fontName: 'Lato',
+		slices: {
+		0: { color: '#ff0066' },
+		1: { color: 'transparent' }
+		}
+	};
+
+	var serviceOptions = {
+		chartArea: {'width': '100%', 'height': '100%'},
+	               'legend': {'position': 'bottom'},
+		title: 'Marching Experience',
+		is3D: true,
+		backgroundColor: 'transparent',
+		fontSize: '26',
+		fontName: 'Lato',
+		slices: {
+		0: { color: '#00ccff' },
+		1: { color: 'transparent' }
+		}
+	};
 
 	var chart = new google.visualization.PieChart(document.getElementById('piechart_3d'));
 	chart.draw(marchingData, marchingOptions);
@@ -104,25 +164,51 @@ function drawChart() {
 	
 	var chart = new google.visualization.PieChart(document.getElementById('piechart_3d_3'));
 	chart.draw(otherClubsData, otherClubsOptions);
+	
+	var chart = new google.visualization.PieChart(document.getElementById('piechart_3d_2'));
+	chart.draw(otherInstrumentData, otherInstrumentOptions);
+	
+	var chart = new google.visualization.PieChart(document.getElementById('service_pie'));
+	chart.draw(serviceData, serviceOptions);
+	
+	var chart = new google.visualization.PieChart(document.getElementById('leadership_pie'));
+	chart.draw(leadershipData, leadershipOptions);
+	
+	var chart = new google.visualization.PieChart(document.getElementById('ensembles_pie'));
+	chart.draw(ensemblesData, ensemblesOptions);
 }
 </script>
 
 
 <h3 class="followUsText" align="center" style="text-align:center;">Our Music Background</h3>
 
-<table>
+<table style="margins: 20px 20px 20px 20px;">
 	<tr>
-		<td width="33%" style="border-spacing: 15px; text-align: center;">
-			<h4 class="followUsTextSmaller">Previous Marching Experience</h4>
-			<div id="piechart_3d" style="width: 450px; height: 250px;"></div>
+		<td w align="center" idth="33%" style="border-spacing: 15px; text-align: center;">
+			<h4 class="statsSmallHeader">Previous Marching Experience</h4>
+			<div  align="center" id="piechart_3d" style="w align="center" idth: 300px; height: 167px;"></div>
 		</td>
-		<td width="33%" style="border-spacing: 15px; text-align: center;">
-			<h4 class="followUsTextSmaller">Plays Another Instrument</h4>
-			<div id="piechart_3d_2" style="width: 450px; height: 250px;"></div>
+		<td w align="center" idth="33%" style="border-spacing: 15px; text-align: center;">
+			<h4 class="statsSmallHeader">Plays Another Instrument</h4>
+			<div  align="center" id="piechart_3d_2" style="w align="center" idth: 300px; height: 167px;"></div>
 		</td>
-		<td width="33%" style="border-spacing: 15px; text-align: center;">
-			<h4 class="followUsTextSmaller">Involved in Other Club(s)</h4>
-			<div id="piechart_3d_3" style="width: 450px; height: 250px;"></div>
+		<td w align="center" idth="33%" style="border-spacing: 15px; text-align: center;">
+			<h4 class="statsSmallHeader">Involved in Non-Band Club(s)</h4>
+			<div  align="center" id="piechart_3d_3" style="w align="center" idth: 300px; height: 167px;"></div>
+		</td>
+	</tr>
+	<tr>
+		<td w align="center" idth="33%" style="border-spacing: 15px; text-align: center;">
+			<h4 class="statsSmallHeader">Involved in Service</h4>
+			<div  align="center" id="service_pie" style="w align="center" idth: 300px; height: 167px;"></div>
+		</td>
+		<td w align="center" idth="33%" style="border-spacing: 15px; text-align: center;">
+			<h4 class="statsSmallHeader">Involved in Other Musical Ensembles</h4>
+			<div  align="center" id="ensembles_pie" style="w align="center" idth: 300px; height: 167px;"></div>
+		</td>
+		<td w align="center" idth="33%" style="border-spacing: 15px; text-align: center;">
+			<h4 class="statsSmallHeader">Holds a Leadership Position</h4>
+			<div  align="center" id="leadership_pie" style="w align="center" idth: 300px; height: 167px;"></div>
 		</td>
 	</tr>
 </table>
@@ -139,7 +225,15 @@ function drawChart() {
 
 <!-- Academics Pie Chart -->
 <h3 class="followUsText" align="center" style="text-align:center;">Our Academics</h3>
-<script src="scripts/stats.js"></script> 
+<div align="center" style="background-color: yellow;align:center;">
+<table align="center" style="align:center;" >
+	<tr>
+		<td width="100%">
+			<script src="scripts/stats.js"></script> 
+		</td>
+	</tr>
+</table>
+</div>
 
 <!-- USA Map -->
 
