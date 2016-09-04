@@ -1,5 +1,5 @@
-var width = 800,
-	height = 800,
+var width = 700,
+	height = 700,
 	sens = 0.25,
 	focused;
 

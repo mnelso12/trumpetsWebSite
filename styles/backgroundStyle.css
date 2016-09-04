@@ -30,17 +30,17 @@ border: 1px solid white;
 
 /* globe */ 
 .water {
-fill: purple;
+fill: #66ffff;
 }
 
 .land {
-fill: yellow;
-stroke: #FFF;
+fill: #ccff99;
+stroke: #009999;
 		stroke-width: 0.7px;
 }
 
 .land:hover {
-fill: green;
+fill: #8cff1a;
 	 stroke-width: 1px;
 }
 
