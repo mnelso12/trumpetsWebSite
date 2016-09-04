@@ -54,7 +54,7 @@ queue()
 
 		//Drawing countries on the globe
 
-		var world = svg2.selectAll("path.land")
+		var nonVisitedWorld = svg2.selectAll("path.land")
 			.data(countries)
 			.enter().append("path")
 			.attr("class", "land")
@@ -68,6 +68,23 @@ queue()
 						var rotate = projection.rotate();
 						projection.rotate([d3.event.x * sens, -d3.event.y * sens, rotate[2]]);
 						svg2.selectAll("path.land").attr("d", path);
+						svg2.selectAll(".focused").classed("focused", focused = false);
+						}))
+
+		var visitedWorld = svg2.selectAll("path.land")
+			.data(countries)
+			.enter().append("path")
+			.attr("class", "visitedLand")
+			.attr("d", path)
+
+			//Drag event
+
+			.call(d3.behavior.drag()
+					.origin(function() { var r = projection.rotate(); return {x: r[0] / sens, y: -r[1] / sens}; })
+					.on("drag", function() {
+						var rotate = projection.rotate();
+						projection.rotate([d3.event.x * sens, -d3.event.y * sens, rotate[2]]);
+						svg2.selectAll("path.visitedLand").attr("d", path);
 						svg2.selectAll(".focused").classed("focused", focused = false);
 						}))
 
