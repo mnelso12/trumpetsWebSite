@@ -1,5 +1,6 @@
-var margin = {top: 350, right: 480, bottom: 350, left: 480},
+var margin = {top: 350, right: 550, bottom: 350, left: 550},
 	radius = Math.min(margin.top, margin.right, margin.bottom, margin.left) - 10;
+	//radius = Math.min(margin.top, margin.right, margin.bottom, margin.left) - 10;
 
 function filter_min_arc_size_text(d, i) {return (d.dx*d.depth*radius/3)>14}; 
 

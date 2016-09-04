@@ -8,6 +8,26 @@ body {
 	min-width: 750px;
 }
 
+circle, path {
+	cursor: pointer;
+}
+
+circle {
+	fill: none;
+	pointer-events: all;
+}
+
+#tooltip { background-color: #ccd3da;
+padding: 3px 5px;
+border-radius: 10px;
+border: 1px solid white;
+		text-align: center;}
+
+		html {
+			font-family: 'Lato', sans-serif;
+
+		}
+
 .fixed-bg {
 	background-position: center;
 	background-attachment: fixed;
@@ -186,12 +206,39 @@ body {
 }
 
 .statsSmallHeader {
+/*
 	color: #ccd3da;
-	font-size:32px;
+*/
+	color: white;
+	font-size: 28px;
 	margin: 10px 10px 10px 10px;
 	vertical-align: middle;
 	font-family: 'Lato', sans-serif;
+	font-weight: normal;
+}
+
+.statsHeaderBiggest {
+	color: white;
+	font-size: 96px;
+	margin: 40px 40px 40px 40px;
+	vertical-align: middle;
+	font-family: 'Lato', sans-serif;
 	font-weight: bold;
+}
+
+.statsHeaderBig {
+	color: white;
+	font-size: 70px;
+	margin: 40px 40px 40px 40px;
+	vertical-align: middle;
+	font-family: 'Lato', sans-serif;
+	font-weight: bold;
+}
+
+
+.navyOverlay {
+	opacity: .8;
+	background-color: #002649;
 }
 
 .followUsText {
