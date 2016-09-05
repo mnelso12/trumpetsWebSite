@@ -21,6 +21,21 @@ li {
 	float: left;
 }
 
+li .nav-icon a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 20px 25px 20px 0px;
+	text-decoration: none;
+	color: white;
+	font-size: 20px;
+	font-family: 'lato', sans-serif;
+}
+
+ul li .nav-icon a:hover {
+	background-color: transparent;
+}
+
 li a {
 	display: block;
 	color: white;
@@ -29,14 +44,21 @@ li a {
 	text-decoration: none;
 	color: white;
 	font-size: 20px;
-	font-family: 'Lato', sans-serif;
+	font-family: 'lato', sans-serif;
+}
+
+li img {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 10px 20px 10px 20px;
 }
 
 ul li a:hover {
 	background-color: #193b5b;
 }
 
-ul#nav .active{
+ul .active{
 	background-color: #32516d;
 }
 

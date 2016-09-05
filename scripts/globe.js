@@ -8,7 +8,7 @@ var width = 700,
 	var projection = d3.geo.orthographic()
 	.scale(280)
 	.rotate([0, 0])
-.translate([width / 2, height / 2])
+	.translate([width / 2, height / 2])
 	.clipAngle(90);
 
 var path = d3.geo.path()
@@ -27,8 +27,8 @@ var path = d3.geo.path()
 	.attr("class", "water")
 	.attr("d", path);
 
-	var countryTooltip = d3.select("body").append("div").attr("class", "countryTooltip"),
-	countryList = d3.select("body").append("select").attr("name", "countries");
+	var countryTooltip = d3.select("globeDiv").append("div").attr("class", "countryTooltip"),
+	countryList = d3.select("globeDiv").append("select").attr("name", "countries");
 
 
 queue()
@@ -44,6 +44,7 @@ queue()
 			countries = topojson.feature(world, world.objects.countries).features;
 
 		//Adding countries to select
+
 
 		countryData.forEach(function(d) {
 				countryById[d.id] = d.name;
