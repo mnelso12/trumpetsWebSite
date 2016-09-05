@@ -8,6 +8,41 @@ body {
 	min-width: 750px;
 }
 
+/* Nav Bar */
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: transparent;
+}
+
+li {
+	float: left;
+}
+
+li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 20px 25px;
+	text-decoration: none;
+	color: white;
+	font-size: 20px;
+	font-family: 'Lato', sans-serif;
+}
+
+ul li a:hover {
+	background-color: #193b5b;
+}
+
+ul#nav .active{
+	background-color: #32516d;
+}
+
+
+
+/* Academics Pie Chart */
 circle, path {
 	cursor: pointer;
 }
