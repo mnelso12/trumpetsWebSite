@@ -160,7 +160,7 @@ color: #666;
 
 .notreDameTrumpetsTitle {
 	color:white;
-	font-size:70px;
+	font-size:84px;
 	/*
 	font-family: 'Arial Black', Gadget, sans-serif;
 	*/
@@ -323,10 +323,19 @@ color: #666;
 	font-weight: normal;
 }
 
+.funHeaderBiggest {
+	color: white;
+	font-size: 96px;
+	margin: 370px 40px 40px 40px;
+	vertical-align: middle;
+	font-family: 'Lato', sans-serif;
+	font-weight: bold;
+}
+
 .statsHeaderBiggest {
 	color: white;
 	font-size: 96px;
-	margin: 40px 40px 40px 40px;
+	margin: 20px 40px 40px 40px;
 	vertical-align: middle;
 	font-family: 'Lato', sans-serif;
 	font-weight: bold;
